@@ -1,0 +1,41 @@
+<div id="cart-item-details">
+  <div class="background-area">
+    <div class="cart-item-type">
+      <div class="sub-header">
+        <div class="header-text"><%=name%></div>
+      </div>
+      <div class="image">
+        <img src="../images/track/<%=thumbnail%>.png">
+      </div>
+      <div class="item-text">
+        <ul class="fx-description-list">
+        </ul>
+      </div>
+
+      <div class="products">
+        <ul class="products-list">
+            <li class="<%=bundle.itemNumber%>"><div><input class="<%=bundle.itemNumber%>" type="checkbox" name="<%=bundle.itemNumber%>"> <%=bundle.itemName%> :</div> <span>$<%=bundle.price%></span><a class="<%=bundle.itemNumber%>">thumb</a></li>
+          <% _.each(products, function(p) { %>
+            <li class="<%= p.itemNumber %>"><div><input class="<%= p.itemNumber %>" type="checkbox" name="<%= p.itemNumber %>"><img class="disabled-checkbox" src="../images/mobile/general/uncheck.png"> <%= p.itemName %> :</div> <span>$<%= p.price %></span> <a class="<%= p.itemNumber %>">thumb</a></li>
+          <% }); %>
+        </ul>
+      </div>
+
+
+      <div class="cart-button">
+        <div id="cart-button" class="fx-button">
+          <span>Add To Cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pop-up">
+    <div>
+      <img src="" alt="">
+    </div>
+    <div class="close"><span>X</span> Close</div>
+  </div>
+
+
+</div>

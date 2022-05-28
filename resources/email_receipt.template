@@ -1,0 +1,101 @@
+
+<!-- BEGIN: main -->
+<div style="border-bottom: 3px solid #A5DA51;">
+  <div style="left: 0;margin-left: auto;margin-right: auto;margin-top: 8px;position: absolute;right: 0;text-align: center;width: 100%">
+    <img src="cid:logo">
+  </div>
+</div>
+
+<div>
+  <div>Dear {shipping_first_name} {shipping_last_name},</div>
+  <div>Your order is being processed.</div>
+  <br>
+
+  <div>Thank you for your purchase at <a href="www.appfxtoys.com">AppFXToys.com</a></div>
+  <br>
+  <div>We received your order on {purchase_date}.</div>
+  <div><b>Order Number: {invoice_number}</b></div>
+</div>
+
+<div>
+  <br>
+  <div><b>Shipping Information</b></div>
+</div>
+<div>
+  <div>
+    <div>
+      <span>{shipping_email}</span><br>
+      <span>{shipping_first_name} {shipping_last_name}</span><br>
+      <span>{shipping_address1}</span><br>
+      <span>{shipping_address2}</span><br>
+      <span>{shipping_city}</span><br>
+      <span>{shipping_region}</span><br>
+      <span>{shipping_country}</span><br>
+      <span>{shipping_postal}</span><br>
+    </div>
+  </div>
+</div>
+<div>Shipping via: USPS Standard Ground</div>
+<div>We will e-mail you a tracking number when your order has shipped.</div>
+<div>
+  <br>
+  <div><b>Billing Information</b></div>
+</div>
+<div>
+  <div>
+    <div>
+      <span>{billing_first_name} {shipping_last_name}</span><br>
+      <span>{billing_address1}</span><br>
+      <span>{billing_address2}</span><br>
+      <span>{billing_city}</span><br>
+      <span>{billing_region}</span><br>
+      <span>{billing_country}</span><br>
+      <span>{billing_postal}</span><br>
+    </div>
+  </div>
+</div>
+<div>
+  <br>
+  <div><b>Cost Summary</b></div>
+</div>
+
+  <!-- BEGIN: item -->
+  <div>
+    <div>
+      <span>({quantity})</span>
+      <span>"{item_name}":</span>
+      <span>{item_description}:</span>
+      <span>${total_item_cost}</span>
+    </div>
+  </div>
+  <!-- END: item -->
+
+<div>
+  <div>
+    <span>Shipping and Handling: {handling}</span>
+  </div>
+</div>
+<div>
+  <div>
+    <span>Total: {grand_total}</span>
+  </div>
+  <br>
+</div>
+
+  <!-- BEGIN: itunescode -->
+    <div>
+      <br>
+      <div><span><b>iTunes store FX Driver download code: {itunes_code}</span></b></div>
+      <div><a href="https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/freeProductCodeWizard?code={itunes_code}">redeem code</div>
+    </div>
+    <br>
+  <!-- END: itunescode -->
+
+<div>If you have questions about your order, please contact us at <a href="www.appfxtoys.com/#contactus">AppFXToys.com/#contactus</a>.</div>
+<br>
+<div>Thanks again for shopping at <a href="www.appfxtoys.com">AppFXToys.com</a></div>
+<br>
+<div>Best Regards,</div>
+<div>AppFXToys Team | <a href="www.appfxtoys.com">AppFXToys.com</a></div>
+
+<!-- END: main -->

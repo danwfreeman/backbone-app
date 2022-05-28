@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>AppFX Toys</display-name>
+    <description>
+
+    </description>
+
+    <servlet>
+        <servlet-name>AppFXToys</servlet-name>
+        <servlet-class>com.appfx.web.AppFXToys</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AppFXToys</servlet-name>
+        <url-pattern>/router</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>marketing</servlet-name>
+        <servlet-class>com.appfx.web.servlet.Marketing</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>marketing</servlet-name>
+        <url-pattern>/marketing/apply</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.appfx.web.servlet.Login</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/marketing/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>agent</servlet-name>
+        <url-pattern>/marketing/agent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>agent</servlet-name>
+        <servlet-class>com.appfx.web.servlet.Agent</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>landing</servlet-name>
+        <servlet-class>com.appfx.web.servlet.Landing</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>landing</servlet-name>
+        <url-pattern>/marketing/landing</url-pattern>
+    </servlet-mapping>
+
+    <!--image server servlet-->
+    <servlet>
+        <servlet-name>imageResource</servlet-name>
+        <servlet-class>com.appfx.web.servlet.MarketingResource</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>imageResource</servlet-name>
+        <url-pattern>/marketing/info/*</url-pattern>
+    </servlet-mapping>
+
+
+
+    <display-name>/</display-name>
+    <servlet>
+        <servlet-name>Jersey REST Service</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.appfx.web.rest</param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey REST Service</servlet-name>
+        <url-pattern>/mobile/rest/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Jersey REST Service</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+
+        <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>securedapp</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+
+
+</web-app> 

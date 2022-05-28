@@ -1,0 +1,21 @@
+<div class="sub-header">
+  <div class="header-text"><%=index%><%=itemName%></div>
+  <div class="remove-item"><span>X</span> Remove Item</div>
+</div>
+<div class="fx-section">
+  <div><img src="../images/thumbs/<%=thumbnail%>.png"></div>
+  <div>
+    <div><span class="description"><%=description%></span></div>
+    <div class="price">Item price: $<%=price%></div>
+    <div class="form-area">
+      <div class="form-area-text">
+        Qty: <input type="text" value='<%=quantity%>' maxlength="2" name="quantity"/>
+        <div class="fx-button update-button">
+          <span>Update</span>
+        </div>
+      </div>
+      <!--<img src="./images/update_button_normal.png">-->
+    </div>
+  </div>
+  <div>Total: $<%=total%></div>
+</div>

@@ -1,0 +1,23 @@
+<!-- BEGIN: main -->
+
+We have a interest from a new sales associate:<br>
+<br>
+<br>
+firstName : {firstName}<br>
+middleName : {middleName}<br>
+lastName  : {lastName}<br>
+address : {address}<br>
+city : {city}<br>
+state : {state}<br>
+zip : {zip}<br>
+email : {email}<br>
+phone : {phone}<br>
+territory : {territory}<br>
+hasCompany : {hasCompany}<br>
+companyState : {companyState}<br>
+canLift : {canLift}<br>
+resume :<br>
+{resume}<br>
+initials : {initials}<br>
+<br>
+<!-- END: main -->

@@ -1,0 +1,48 @@
+/** 
+ *  sliderkit-demos.css
+ *	> CSS code for demos
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+.photosgallery-vertical{width:960px;height:368px;}
+.photosgallery-vertical .sliderkit-nav{top:58px;left:0;width:217px;height:100%;background:#000;}
+.photosgallery-vertical .sliderkit-nav-clip{left:7px; width:217px !important; margin:0 13px 0 0; height:248px !important;top:-15px !important;;}
+.photosgallery-vertical .sliderkit-nav-clip ul li{margin:0px 0 18px 0; padding:0; width:217px !important; height:114px !important;}
+.photosgallery-vertical .sliderkit-nav-clip ul li a{ display:block; width:217px !important; height:114px !important; overflow:hidden;}
+.photosgallery-vertical .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0; }
+.photosgallery-vertical .sliderkit-nav-clip ul li img{ width:217px !important;height:114px !important;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn{position:absolute;left:0;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a{display:block;width:28px;height:78px;background:url(../../../images/general/csg-515e762d3cb72.png) no-repeat top left;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a span{display:none;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev{top:-58px; left:102px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next{bottom:91px; left:102px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev a{background-position: 0 0; width: 28px; height: 14px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next a{background-position: 0 -64px; width: 28px; height: 14px;}
+.photosgallery-vertical .sliderkit-go-btn a{width:200px;height:300px;background:#ccc;opacity:.8;}
+.photosgallery-vertical .sliderkit-go-prev{top:0;left:0;}
+.photosgallery-vertical .sliderkit-go-next{top:0;right:0;}
+.photosgallery-vertical .sliderkit-panel{height: 247px; left: 240px; top: 43px; width: 440px;}
+.photosgallery-vertical .sliderkit-panel img{height: 247px; width: 440px;}
+.sliderkit-panels{ width:734px; height:378px; float:left;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-textbox{bottom:0;left:0;height:85px;width:500px;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-text{height:65px;padding:10px 15px 10px 115px;font-size:0.9em;color:#fff;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-text h4{height:auto;margin:0 0 7px;line-height:1.1em;font-size:1.1em;font-weight:bold;border:none;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-overlay{height:85px;width:500px;background:#000;opacity:0.6;}
+.sliderkit .text-info{color: #B1B1B1; float: left; font: 23px Arial,Helvetica,sans-serif; height: 252px; margin-top: 40px; width: 226px;}
+.sliderkit .text-info div {line-height:25px}
+.photosgallery-minimalistic{width:500px;height:335px;padding:0 0 50px;}
+.photosgallery-minimalistic .sliderkit-nav{left:0;bottom:0;width:500px;padding:0;background:#000;}
+.photosgallery-minimalistic .sliderkit-nav-clip{margin:0 auto;}
+.photosgallery-minimalistic .sliderkit-nav-clip ul li{float:left;margin:0 0 0 0;}
+.photosgallery-minimalistic .sliderkit-nav-clip ul li a{display:block;width:75px;height:50px;overflow:hidden;margin:0;padding:0;opacity:0.4;}
+.photosgallery-minimalistic .sliderkit-nav-clip ul li a:hover{cursor:default;}
+.photosgallery-minimalistic .sliderkit-nav-clip ul li.sliderkit-selected a{opacity:1;}
+.photosgallery-minimalistic .sliderkit-panel{top:0;left:0;width:500px;height:335px;}
+.photosgallery-minimalistic .sliderkit-timer{top:332px;}
+.photosgallery-5 .sliderkit-count-lines{left:220px;top:auto;right:auto;bottom:75px;}

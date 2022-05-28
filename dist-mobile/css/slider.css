@@ -1,0 +1,66 @@
+#slide {
+position:relative;
+overflow:hidden;
+border-radius:12px;
+background:#ebebec;
+width:960px;
+z-index:2;
+margin:20px auto 0;
+padding:4px;
+}
+.slider {
+width:960px;
+height:500px;
+position:relative;
+z-index:2;
+margin:0 auto;
+}
+.items {
+display:none;
+}
+.pagination {
+position:absolute;
+bottom:-10px;
+left:800px;
+display:inline-block;
+background:0 0 repeat;
+width:116px;
+z-index:999!important;
+padding:20px 0 14px 70px;
+}
+.pagination li {
+float:left;
+margin-right:15px;
+}
+.pagination a {
+display:block;
+width:10px;
+height:10px;
+background:url(../../images/general/pagination.png) right 0 no-repeat;
+}
+.pagination li.current a,.pagination li:hover a {
+background-position:0 0;
+}
+.banner {
+z-index:1000!important;
+position: relative;
+top: -480px;
+width:930px;
+height:200px;
+}
+.banner p {
+    font: bold 36px/41px Arial,Helvetica,sans-serif;
+    margin: 10px 0 0 31px;
+    position: relative;
+    top: -337px;
+    width: 930px;
+}
+span.contntbanner {
+font-size:24px;
+font-family:Arial, Helvetica, sans-serif;
+color:#fff;
+float:left;
+line-height:30px;
+width:930px;
+margin:0 0 0 10px;
+}

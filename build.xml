@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<project name="appfx" default="war">
+
+    <path id="compile.classpath">
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <mkdir dir="dist"/>
+        <exec executable="C:\Program Files\nodejs\node">
+            <arg line="r.js -o build-main.js"/>
+        </exec>
+        <exec executable="C:\Program Files\nodejs\node">
+            <arg line="r.js -o build-mobile.js"/>
+        </exec>
+    </target>
+
+    <target name="injectFileInfo" depends="init">
+        <delete file="resources/web-prod.xml"/>
+        <copy file="web/WEB-INF/web.xml" tofile="resources/web-prod.xml"/>
+
+        <property name="ssl.pattern"><![CDATA[[<]!--ssl--[>](.*?)[<]!--/ssl--[>]]]></property>
+
+        <loadfile property="ssl" srcFile="resources/ssl-constraint.txt"/>
+
+        <replaceregexp file="resources/web-prod.xml" flags="gs">
+            <regexp pattern="${ssl.pattern}"/>
+            <substitution expression="${ssl}"/>
+        </replaceregexp>
+    </target>
+
+    <target name="compile" depends="injectFileInfo">
+        <javac destdir="build/classes" debug="true" srcdir="src">
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+
+    <target name="jsp-to-webinf">
+        <copy todir="web/WEB-INF/marketing">
+            <fileset dir="jsp/marketing"/>
+        </copy>
+    </target>
+
+    <target name="war" depends="compile">
+        <!-- copy mobile js dir into main, ideally not copy /mobile in main js build but do copy /images/mobile -->
+        <delete dir="dist-main/mobile"/>
+        <copy todir="dist-main/mobile">
+            <fileset dir="dist-mobile/mobile"/>
+        </copy>
+
+        <war destfile="dist/appfx.war" webxml="resources/web-prod.xml">
+            <fileset dir="dist-main"/>
+            <lib dir="lib"/>
+            <classes dir="build/classes"/>
+            <webinf dir="jsp" includes="/marketing/**/*"/>
+        </war>
+    </target>
+
+    <target name="clean">
+        <delete dir="dist"/>
+        <delete dir="dist-main"/>
+        <delete dir="dist-mobile"/>
+        <delete dir="build"/>
+        <delete dir="web/WEB-INF/classes/com/"/>
+    </target>
+
+</project>

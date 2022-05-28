@@ -1,0 +1,44 @@
+
+<!-- BEGIN: main -->
+<div style="border-bottom: 3px solid #A5DA51;">
+  <div style="left: 0;margin-left: auto;margin-right: auto;margin-top: 8px;position: absolute;right: 0;text-align: center;width: 100%">
+    <img src="cid:logo">
+  </div>
+</div>
+
+<div>
+  <div>Dear {first_name} {last_name},</div>
+
+  <div>You have an interested party regarding a device you listed using the AppFX Device XChange.</div>
+  <br>
+
+  <div>Listed Device Name: {device_name}</div>
+  <br>
+  <div>Listed Device Description: {device_description}</div>
+  <br>
+  <div>Listed Device Price: ${device_price}</div>
+  <br>
+  <div>Please contact interested party at: {buyer_email}</div>
+  <br>
+  <div>Message from potential buyer: {buyer_message}</div>
+  <br>
+
+</div>
+
+
+<br>
+<div>Thanks again for listing your devices with us at <a href="www.appfxtoys.com">AppFXToys.com</a></div>
+<br>
+<div>After your sale is complete please remember to remove your device from the postings:</div>
+<div>
+  <ul>
+    <li>Log in with the user id you created your posting with</li>
+    <li>Search for your device</li>
+    <li>Click the remove device link in your posting's header</li>
+  </ul>
+</div>
+<br>
+<div>Best Regards,</div>
+<div>AppFXToys Team | <a href="www.appfxtoys.com">AppFXToys.com</a></div>
+
+<!-- END: main -->

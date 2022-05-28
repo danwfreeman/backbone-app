@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","text!templates/error-page.html"],function(e,t,n,r){var i=Backbone.View.extend({initialize:function(){this.template=t.template(r)},render:function(e){return this.$el.html(this.template()),this.el},getTitle:function(){return"Requested page was not found"}});return i});

@@ -1,0 +1,290 @@
+
+.fx-section {
+    width:100%;
+}
+div.fx-button {
+  width: 92%;
+  margin-left: 28px;
+}
+.sub-header {
+     width: 100%;
+}
+.background-area{
+    width: 100%;
+}
+.form-area label {
+    width: 91%;
+}
+.form-area input[type="password"], .form-area input[type="text"], .form-area textarea, select {
+    width: 91%;
+}
+.cart-item {
+    width: 100%;
+}
+.cart-item .form-area label.invalid {
+    width: 210px;
+}
+.cost-total div:nth-child(1), .cost-handling div:nth-child(1), .grand-total-area div:nth-child(1) {
+    width:250px;
+}
+.cost-total, .cost-handling, .grand-total-area {
+    width: 95%;
+}
+body, .pagebox.ui-page, #header, #content, #footer{
+	width: 100%;
+}
+#footer{
+  width: 100%;
+}
+#user-name-area {
+  width:100%;
+}
+#page-header {
+    width: 100%;
+}
+.message-area .message {
+  width: 92%
+}
+.message-area {
+    width: 100%;
+}
+.main-menu {
+    width:100%;
+}
+.scrollable {
+    background: url("../../images/general/ajax-loader.gif") no-repeat scroll center center #FFFFFF;
+    float: left;
+    height: 280px;
+    left: 50%;
+    margin-left: -240px;
+    overflow: hidden;
+    position: relative;
+    width: 480px;	
+}
+.items .item {
+    height: 280px;
+    width: 480px;
+}
+.items .image{
+    height: 280px;
+    width: 480px;
+}
+#home-page-wide #fxcar {
+    background: url('../../images/mobile/home/fxcar_ml.jpg');
+}
+#home-page-wide #fxbundle {
+    background: url('../../images/mobile/home/fx_bundle_ml.jpg');
+}
+#home-page-wide #masking {
+    background: url('../../images/mobile/home/masking_ml.jpg');
+}
+#home-page-wide #stickerbundle {
+    background: url('../../images/mobile/home/sticker_bundle_splash_ml.jpg');
+}
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  #home-page-wide #fxcar {
+    background: url(../../images/mobile/home/fxcar_ml@2x.jpg) no-repeat;
+    background-size: 480px 280px;
+  }
+  #home-page-wide #fxbundle {
+    background: url(../../images/mobile/home/fx_bundle_ml@2x.jpg) no-repeat;
+    background-size: 480px 280px;
+  }
+  #home-page-wide #masking {
+    background: url(../../images/mobile/home/masking_ml@2x.jpg) no-repeat;
+    background-size: 480px 280px;
+  }
+  #home-page-wide #stickerbundle {
+    background: url(../../images/mobile/home/sticker_bundle_splash_ml@2x.jpg) no-repeat;
+    background-size: 480px 280px;
+  }
+}
+.center-boxmenu {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    position: relative;
+    right: 0;
+    text-align: center;
+    width: 480px;
+}
+#boxmenu {
+    width:100%;
+}
+#boxmenu.home li:nth-child(2), #boxmenu.home li:nth-child(1) {
+    background-size: 240px 213px;
+    height: 213px;
+    width: 239px;
+}
+#boxmenu.home li:nth-child(3) {
+    background: url("../../images/mobile/home/maskingtrack_wide_m.jpg");
+    background-size:480px 237px;
+    width: 480px;
+}
+.video-container {
+    height: 214px;
+    width:239px;
+}
+#menu-sec {
+    float: left;
+    width: 100%;
+}
+#user-information .address-same-as div:nth-child(2){
+    width:90%;
+}
+#user-information .address-same-as {
+    width:100%;
+}
+#fx-gallery .gallery, #complete-package .gallery {
+  width:100%;
+}
+.fx-scrollable {
+  width: 374px;
+}
+#search-device-results .device-item {
+    width: 100%;
+}
+#cart-item-types .cart-item-type {
+    width: 100%;
+}
+#cart-item-types .title-area {
+    width:250px;
+}
+#cart-item-types .ribbon-title-area {
+  width:55%;
+}
+#cart #cart-list{
+  width:100%;
+}
+#cart #cart-list .cart-item .fx-section > div:nth-child(2) {
+  margin-left: 15px;
+}
+#cart #cart-list .cart-item .fx-section > div:nth-child(3){
+   margin-top: 55px;
+   width: 130px;
+}
+#cart #cart-list .header-text {
+    width: 325px;
+}
+#cart div.fx-button {
+  margin-left:10px;
+}
+#cart .button-area {
+    width:100%
+}
+#cart .button-area .center-wide {
+    text-align: center;
+}
+#cart .notice {
+  width:100%;
+}
+span.discount {
+    padding: 22px 0 0 96px;
+}
+#stock-car-details .description, #fx-gallery #tracks .description {
+    width: 100%;
+}
+#stock-car-details .cart-button {
+    width:100%;
+}
+#stock-car-details .iphone-toggle {
+    width:100%;
+}
+#review-order #review-cart-list .cart-item {
+    width:97%;
+}
+#review-order #review-cart-list {
+    width: 100%;
+}
+#review-order #review-cart-list .cart-item div:nth-child(3) {
+    width: 144px;
+}
+#fx-gallery .description, #complete-package .description {
+    width:100%;
+}
+#product-safety .safety-area {
+    width: 100%;
+}
+#product-safety .safety-area-image {
+    background: url("../../images/mobile/product/product_bg_landscape.jpg") no-repeat scroll 0 0 transparent;
+    height: 291px;
+    width: 480px;
+}
+#product-safety .safety-area-image #car-top .front {
+    left: 92px;
+    top: 60px;
+}
+#product-safety .safety-area-image #car-top .middle {
+    left: 187px;
+    top: 9px;
+}
+#product-safety .safety-area-image #car-top .back {
+    left: 404px;
+    top: -14px;
+}
+#product-safety .safety-area-image #car-bottom .front {
+    left: 79px;
+    top: 47px;
+}
+#product-safety .safety-area-image #car-bottom .middle {
+    left: 159px;
+    top: 36px;
+}
+#product-safety .safety-area-image #car-bottom .back {
+    left: 374px;
+    top: -29px;
+}
+#product-safety .safety-area-image #recycle {
+    left: 15px;
+    top: 72px;
+}
+#product-safety #verbiage-area {
+    width: 468px;
+}
+#product-safety .bottom-verbiage {
+  width:100%;
+  float:left;
+}
+#contact-us .details-area {
+     width: 100%;
+}
+#contact-us .form-area{
+    width: 100%;
+}
+#contact-us .form-area input[type="text"], #contact-us .form-area textarea {
+    width: 91%;
+}
+#contact-us .form-area .our-terms {
+    width: 92.4%;
+} 
+#contact-us .form-area .our-terms p {
+    float: left;
+    width:95%;
+}
+#contact-us .form-area .message {
+    width: 100%;
+}
+#contact-us .contact-details {
+    padding: 15px 0 0;
+}
+#appstore .description, #appstore .icon, #privacy-policy .description, #terms-conditions .description {
+    width:95%;
+}
+.networks-menu {
+    width:100%;
+ 
+}
+#copyright-footer-container {
+  width:100%;
+}
+#footer-view-mode {
+    width:100%;
+    height:30px;
+}
+#footer-rights {
+    width:100%;
+}

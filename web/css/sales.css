@@ -1,0 +1,347 @@
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    color:white;
+}
+body {
+    line-height:1;
+    background-color: #000000
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+.main{
+  padding: 25px;
+  width: 800px;
+  background:black;
+  float:left;
+  width: 100%;
+  height: 100%;
+}
+
+.main .header{
+    float: left;
+    height: 150px;
+    position: relative;
+    top: -29px;
+    width: 800px;
+}
+
+.content{
+  width:800px;
+}
+
+h1 {
+  font-size:1.3em;
+  padding:10px 0px 10px 0px;
+  color:white;
+}
+
+.verbiage{
+  padding:5px;
+  font-size:1.1em;
+  color:white;
+
+}
+
+.verbiage span{
+  font-weight:bold;
+}
+
+.verbiage p {
+  font-size: 1.2em;
+  padding: 5px;
+  line-height: 24px;
+}
+
+#sign-up {
+  height: 850px;
+}
+
+#sign-up .data-entry, #landing form label{
+  float:left;
+  width:650px;
+  padding: 7px 0 0;
+}
+
+
+#sign-up form{
+  border:2px solid #A0D34E;
+  padding:15px;
+  float:left;
+  margin-bottom: 35px;
+}
+
+
+#sign-up form label, #landing form label{
+  font-size:.9em;
+  font-family: Arial,Helvetica,sans-serif;
+  color:white;
+  display: block;
+  width:150px;
+  float:left
+}
+
+#sign-up form .explanations label{
+  width:740px;
+  padding-bottom: 3px;
+}
+
+#sign-up form .explanations .indent {
+  padding-left:6px;
+}
+
+#sign-up form textarea{
+    height: 83px;
+    width: 737px;
+}
+
+#sign-up form label.resume{
+    width: 330px;
+}
+
+#sign-up form span.error {
+  padding-left: 10px;
+  color: red;
+}
+
+#landing {
+  height:700px;
+}
+
+#landing .data-entry{
+  padding-top:5px;
+}
+
+#landing .data-entry input {
+  margin-top:5px;
+}
+
+#landing #apply-area{
+
+}
+
+#landing h1 {
+  font-family: Microsoft Sans Serif;
+  font-size: 3em;
+}
+
+#landing .welcome-area {
+  width:545px;
+  float:left;
+  padding: 25px 0;
+}
+
+#landing .login-area {
+  width:255px;
+  float:left;
+  padding: 25px 0;
+}
+
+#landing .apply-area {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 800px;
+  padding: 30px;
+}
+
+#landing .apply-area img{
+  width:145px;
+}
+
+#landing form{
+  padding:15px;
+  float:left;
+  margin-bottom: 35px;
+}
+
+#landing form .error-msg {
+  padding:8px 0px 0px 0px;
+}
+
+#landing form span.error {
+  color :red;
+}
+
+#landing a {
+  color: #A4A4A4;
+  text-decoration: none;
+}
+
+#agent .slide-area img.image{
+    border-bottom: 3px solid #A0D34E;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    width:800px;
+}
+
+#agent .slide-area img.image[alt="slide1"]{
+  width:757px;
+}
+
+#agent .navigation {
+  width:225px;
+  float:left;
+  padding: 25px 0;
+}
+
+#agent .download-link {
+  padding-top:5px;
+}
+
+#agent .download-link a {
+    color: #808080;
+    font-size: 1.1em;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+#agent .download-link a:hover {
+  text-decoration:underline;
+  color:#FFFFFF;
+}
+
+#agent .slide-area {
+  width:575px;
+  float:left;
+  padding: 25px 0;
+}
+
+#agent .navigation .links div {
+  padding:5px;
+}
+
+#agent .navigation .links div.indent {
+  padding-left:20px;
+
+}
+
+#agent .navigation .links div:hover{
+  text-decoration:underline;
+}
+
+#agent .navigation .links span {
+  color:white;
+  font-size:1.3em;
+  cursor: pointer;
+}
+
+#agent h2 {
+  font-size: 1.6em;
+  padding:5px;
+}
+
+#agent ul {
+    font-size:1.2em;
+    list-style: square outside none;
+    padding: 10px 5px 5px 30px;
+}
+
+#agent ul li{
+  padding-bottom:10px;
+  line-height: 22px;
+}
+
+#agent ul li ul{
+  font-size:1em;
+}
+
+#agent .next-previous {
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+      text-align: center;
+      width: 160px;
+      cursor: pointer;
+      font-size:1.3em;
+}
+
+#agent .next-previous .previous, #agent .next-previous .next{
+  float:left;
+  padding: 0px 10px 0 10px;
+
+}
+
+#agent .next:hover{
+  text-decoration:underline;
+}

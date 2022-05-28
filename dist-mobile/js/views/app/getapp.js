@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","text!templates/app/getapp.html"],function(e,t,n,r){var i=Backbone.View.extend({initialize:function(){this.template=t.template(r)},render:function(e){return this.$el.html(this.template()),this.el}});return i});
